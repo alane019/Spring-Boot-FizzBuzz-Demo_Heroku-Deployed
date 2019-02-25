@@ -14,11 +14,11 @@ public class MainController {
 			for(int i=1; i<=100; i++) {
 				
 				if(i % 3 == 0 && i % 5 == 0 ) {
-					solution.add("fizz buzz!");
+					solution.add("fizz-buzz");
 				}
 					
 			else if(i % 3 == 0) {
-				solution.add("fizz");
+				solution.add("Fizz");
 			}
 			else if(i % 5 == 0) {
 				solution.add("buzz");
@@ -30,7 +30,7 @@ public class MainController {
 					
 			}
 			
-			return("<h1>FizzBuzz</h1><div><p>" 
+			return("<h1>FizzBuzz</h1><div style=\"letter-spacing: 2px; padding: 5px; color:#333;\""><p>" 
 					+ solution.toString()
 					+ "</p></div>");		
 		}
